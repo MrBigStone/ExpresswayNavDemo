@@ -1,4 +1,4 @@
-package com.bigstone.expresswaynav;
+package com.bigstone.expresswaynav.modules;
 
 import android.Manifest;
 import android.graphics.Color;
@@ -14,6 +14,7 @@ import com.amap.api.maps.AMap;
 import com.amap.api.maps.UiSettings;
 import com.amap.api.maps.model.BitmapDescriptorFactory;
 import com.amap.api.maps.model.MyLocationStyle;
+import com.bigstone.expresswaynav.R;
 import com.bigstone.expresswaynav.base.BaseActivity;
 import com.bigstone.expresswaynav.databinding.ActivityMainBinding;
 import com.bigstone.expresswaynav.map.LocationManager;
@@ -80,7 +81,7 @@ public class MainActivity extends BaseActivity implements EasyPermissions.Permis
         binding.menuFl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                binding.drawerLayout.openDrawer(binding.menuContainerCl);
+                binding.drawerLayout.openDrawer(binding.sideBarView);
             }
         });
 
@@ -91,7 +92,7 @@ public class MainActivity extends BaseActivity implements EasyPermissions.Permis
      * 初始化侧边栏
      */
     private void initDrawerLayout() {
-        ViewUtils.setLPWidth(binding.menuContainerCl, (int) (SizeUtils.getScreenWidth(this) * 0.8));
+        ViewUtils.setLPWidth(binding.sideBarView, (int) (SizeUtils.getScreenWidth(this) * 0.8));
         ViewUtils.setStatusBarState(binding.placeHolderView);
         binding.drawerLayout.setScrollBarFadeDuration(200);  //动画时间
         binding.drawerLayout.setScrimColor(Color.parseColor("#66000000"));

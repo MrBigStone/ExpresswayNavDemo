@@ -5,7 +5,7 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".modules.MainActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -44,8 +44,8 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/menuContainerCl"
+    <com.bigstone.expresswaynav.modules.home.view.HomeSideBarView
+        android:id="@+id/sideBarView"
         android:layout_width="250dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
