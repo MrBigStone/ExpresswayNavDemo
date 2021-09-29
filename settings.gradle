@@ -1,0 +1,2 @@
+rootProject.name = "ExpresswayNavDemo"
+include ':app'
