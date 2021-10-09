@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 侧边栏菜单item -->
+    <declare-styleable name="SideMenuView">
+        <!-- 菜单标题 -->
+        <attr name="menu_title" format="string"/>
+    </declare-styleable>
+</resources>
